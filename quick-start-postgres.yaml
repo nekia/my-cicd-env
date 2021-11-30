@@ -747,6 +747,7 @@ data:
       passwordSecret:
         name: argo-postgres-config
         key: password
+    dockerSockPath: /var/run/containerd/containerd.sock
 kind: ConfigMap
 metadata:
   name: workflow-controller-configmap
