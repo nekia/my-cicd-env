@@ -683,7 +683,7 @@ data:
       secretKeySecret:
         name: my-minio-cred
         key: secretkey
-  containerRuntimeExecutor: docker
+  containerRuntimeExecutor: pns
   containerRuntimeExecutors: |
     - name: k8sapi
       selector:
@@ -698,9 +698,6 @@ data:
       requests:
         cpu: 10m
         memory: 64Mi
-    env:
-    - name: ARGO_CONTAINER_RUNTIME_EXECUTOR
-      value: pns
   images: |
     argoproj/argosay:v1:
       command: [cowsay]
