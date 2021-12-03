@@ -1,6 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
+  - limit-resource.yaml
   - eventbus-native.yaml
   - sensor-rbac.yaml
   - workflow-rbac.yaml
