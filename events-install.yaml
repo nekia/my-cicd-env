@@ -123,7 +123,7 @@ kind: ServiceAccount
 metadata:
   name: argo-events-sa
   namespace: argo-events
-automountServiceAccountToken: false
+automountServiceAccountToken: true
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
